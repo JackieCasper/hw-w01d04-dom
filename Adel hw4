@@ -1,0 +1,187 @@
+var quotes = [
+  'I live my life a quarter mile at a time',
+  'I said a ten-second car, not a ten-minute car',
+  'You almost had me? You never had me - you never had your car!',
+  'I don\'t have friends. I have family.',
+  'It don\'t matter if you win by an inch or a mile. Winning\'s winning.'
+];
+
+var favoriteThings = [
+  'Fast cars',
+  'Muscles',
+  'Sleeveless t-shirts',
+  'Revving my engine',
+  'Living my life a quarter mile at a time',
+  'Staring people down'
+]
+
+
+// Random quote of the day generator
+function randomQuote() {
+  var randomIndex = Math.floor(Math.random() * quotes.length)
+  document.querySelector('#quote-of-the-day').textContent = '"' + quotes[randomIndex] + '"';
+};
+
+randomQuote();
+
+
+// Part 1
+document.querySelector('#main-title').textContent="Something Shorter, LOL";
+
+// Part 2
+document.body.style.backgroundColor = "white";
+
+// Part 3
+
+var list = document.querySelectorAll('.special-title');
+
+
+ 
+console.log(list);
+
+
+ 
+for(i=0;i<list.length;i++)
+
+
+ 
+{
+
+
+ 
+  list[i].style.fontsize = "2 rem";
+
+
+ 
+}
+// Part 4
+
+var SL = document.querySelectorAll('.side-bar');
+
+
+ 
+var Ul = document.querySelectorAll('ul');
+
+
+ 
+var NL = document.createElement('li');
+
+
+ 
+var AC = document.createTextNode('Taif');
+
+
+ 
+NL.appendChild(AC);
+
+
+ 
+UL.appendChild(NL);
+
+
+ 
+SL.appendChild(UL);
+
+
+ 
+document.body.appendChild(SL);
+// Part 5
+var newDiv = document.createElement('div')
+
+
+ 
+newDiv.classList.add('blog-post')
+
+
+ 
+newDiv.classList.add('red');
+
+
+ 
+var h2 = document.createElement('h2');
+
+
+ 
+var p = document.createElement('p');
+
+
+ 
+var city1 = document.createTextNode('Drive ir die');
+
+
+ 
+document.querySelector('.main').appendChild(newDiv);
+
+
+ 
+p.appendChild(city1);
+
+
+ 
+h2.appendChild(p);
+
+
+ 
+newDiv.appendChild(h2);
+
+
+ 
+newDiv.appendChild(h2);
+
+// Part 6
+
+var neli = document.querySelector('#favorite-things')
+
+
+ 
+
+
+
+ 
+for (i=0;i<favThings.length;i++)
+
+
+ 
+   {
+
+
+ 
+     var one = favThings[i];
+
+
+ 
+     var first  = document.createElement('li');
+
+
+ 
+     var firstText = document.createTextNode(fav);
+
+
+ 
+     first.appendChild(firstText);
+
+
+ 
+     neli.appendChild(first);
+
+
+ 
+   }
+
+
+ 
+
+// Part 7
+function randomQuote() {
+
+
+ 
+  var randomIndex = Math.floor(Math.random() * quotes.length)
+
+
+ 
+  document.querySelector('#quote-of-the-day').textContent = '"' + quotes[randomIndex] + '"';
+
+
+ 
+};
